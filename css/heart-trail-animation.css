@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png');
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
+  }
+}
